@@ -74,7 +74,7 @@ zookeeper.connection.timeout.ms=6000
 ```
 
 
-### Produce messages
+### Produce messages for topics
 
 ```bash
 ./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic blabla
