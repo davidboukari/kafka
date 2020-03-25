@@ -2,6 +2,7 @@
 
 ## Sources 
 
+* https://openclassrooms.com/fr/courses/4451251-gerez-des-flux-de-donnees-temps-reel/4451521-metamorphosez-vos-applications-temps-reel-avec-kafka
 * https://data-flair.training/blogs/kafka-architecture/
 * http://kafka.apache.org/
 * https://downloads.apache.org/kafka/2.4.1/kafka_2.12-2.4.1.tgz
@@ -52,10 +53,37 @@ log.retention.check.interval.ms=300000
 zookeeper.connect=localhost:2181
 zookeeper.connection.timeout.ms=6000
 
+```
 
+### Manage message: topics
+
+Create a topics
+
+```
+./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic blabla
+```
+
+List  topics
+
+```bash
+./bin/kafka-topics.sh --list --zookeeper localhost:2181
+
+./bin/kafka-topics.sh --describe --zookeeper localhost:2181 --topic blabla
 ```
 
 
+### Produce messages
+
+```bash
+./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic blabla
+
+```
+
+### Read messages
+
+```bash
+./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic blabla
+```
 
 
 
