@@ -26,6 +26,8 @@ maxClientCnxns=0
 
 ```
 
+
+
 ### Start the cluster Broker
 
 
@@ -96,7 +98,11 @@ zookeeper.connection.timeout.ms=6000
  ```
  
  
+### Increase partitions
 
+```bash
+./bin/kafka-topics.sh --alter --zookeeper localhost:2181 --topic blabla --partitions 2
+```
 
 
 
