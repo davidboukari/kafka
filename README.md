@@ -10,6 +10,27 @@
 
 ## Basic configuration
 
+
+Start the cluster manager zookeeper
+
+```bash
+cat ./config/zookeeper.properties
+dataDir=/tmp/zookeeper
+clientPort=2181
+maxClientCnxns=0
+
+./bin/zookeeper-server-start.sh ./config/zookeeper.properties
+```
+
+
+
+
+
+
+
+
+
+
 ### For kafka1
 
 * broker.id=1
