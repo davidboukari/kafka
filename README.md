@@ -22,30 +22,39 @@ maxClientCnxns=0
 ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
 ```
 
-
-
-
-
-
-
-
-
-
-### For kafka1
-
-* broker.id=1
-* listeners=PLAINTEXT://:9091
-* zookeeper.connect=localhost:2181,localhost:2182
-* log.dirs=/home/vagrant/kafka1/logs
-
-### For kafka2
-
-* broker.id=2
-* listeners=PLAINTEXT://:9092
-* zookeeper.connect=localhost:2181,localhost:2182
-* log.dirs=/home/vagrant/kafka2/logs
-
+Start the cluster server
 
 ```bash
-./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 3 --partitions 50 --topic demo
+cat ./config/server.properties
+
+# Identifiant de notre broker
+broker.id=0
+# Nom d'hôte et port sur lequel écoute le broker Kafka
+listeners=PLAINTEXT://:9092
+# Décommentez cette ligne pour permettre la suppression de topic, ce qui
+# sera utile par la suite
+delete.topic.enable=true
+# Vérifiez que vous disposez de suffisamment d'espace disque sur la
+# partition qui contient ce répertoire
+log.dirs=/tmp/kafka-logs
+num.partitions=1
+# Paramètres concernant la rétention des données
+log.retention.hours=168
+log.segment.bytes=1073741824
+log.retention.check.interval.ms=300000
+# Connexion à Zookeeper
+zookeeper.connect=localhost:2181
+zookeeper.connection.timeout.ms=6000
+
+./bin/kafka-server-start.sh ./config/server.properties
 ```
+
+
+
+
+
+
+
+
+
+
