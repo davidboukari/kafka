@@ -55,15 +55,15 @@ zookeeper.connection.timeout.ms=6000
 
 ```
 
-### Manage message: topics
+### *Manage message: topics*
 
-Create a topics
+### Create a topics
 
 ```
 ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic blabla
 ```
 
-List  topics
+### List  topics
 
 ```bash
 ./bin/kafka-topics.sh --list --zookeeper localhost:2181
