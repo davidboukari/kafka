@@ -7,7 +7,7 @@
 
 ## Python
 
-* python sample[pythonsample]
+* [python sample](pythonsample.md)
 
 ## Basic configuration
 
