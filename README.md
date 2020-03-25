@@ -11,20 +11,25 @@
 ## Basic configuration
 
 
-Start the cluster manager zookeeper
+### Start the cluster manager zookeeper
 
 ```bash
+./bin/zookeeper-server-start.sh ./config/zookeeper.properties
+
 cat ./config/zookeeper.properties
+
 dataDir=/tmp/zookeeper
 clientPort=2181
 maxClientCnxns=0
 
-./bin/zookeeper-server-start.sh ./config/zookeeper.properties
+
 ```
 
-Start the cluster server
+### Start the cluster server
 
 ```bash
+./bin/kafka-server-start.sh ./config/server.properties
+
 cat ./config/server.properties
 
 # Identifiant de notre broker
@@ -46,7 +51,7 @@ log.retention.check.interval.ms=300000
 zookeeper.connect=localhost:2181
 zookeeper.connection.timeout.ms=6000
 
-./bin/kafka-server-start.sh ./config/server.properties
+
 ```
 
 
