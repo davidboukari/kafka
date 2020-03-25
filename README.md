@@ -25,7 +25,8 @@ maxClientCnxns=0
 
 ```
 
-### Start the cluster server
+### Start the cluster Broker
+
 
 ```bash
 ./bin/kafka-server-start.sh ./config/server.properties
