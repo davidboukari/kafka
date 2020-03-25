@@ -79,14 +79,23 @@ zookeeper.connection.timeout.ms=6000
 
 ```
 
-### Read messages
+### Consum messages
 
 ```bash
 ./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic blabla
+
+./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic blabla --consumer-property group.id=mygroup
 ```
 
+### List consumers
 
-
+```bash
+ ./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+ 
+ ./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group mygroup
+ ```
+ 
+ 
 
 
 
