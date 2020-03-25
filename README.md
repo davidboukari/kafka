@@ -3,10 +3,7 @@
 ## Sources 
 
 * https://openclassrooms.com/fr/courses/4451251-gerez-des-flux-de-donnees-temps-reel/4451521-metamorphosez-vos-applications-temps-reel-avec-kafka
-* https://data-flair.training/blogs/kafka-architecture/
-* http://kafka.apache.org/
-* https://downloads.apache.org/kafka/2.4.1/kafka_2.12-2.4.1.tgz
-
+* https://downloads.apache.org/kafka/2.4.1/kafka_2.11-2.4.1.tgz
 
 
 ## Basic configuration
@@ -22,7 +19,6 @@ cat ./config/zookeeper.properties
 dataDir=/tmp/zookeeper
 clientPort=2181
 maxClientCnxns=0
-
 
 ```
 
