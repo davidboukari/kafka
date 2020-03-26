@@ -18,6 +18,10 @@ urllib3==1.25.8
 zipp==3.1.0
 ```
 
+## Account creation to get a key
+
+* https://developer.jcdecaux.com/#/signup
+
 ## Producer velib-get-stations.py
 
 ```bash
