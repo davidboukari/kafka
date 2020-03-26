@@ -1,5 +1,22 @@
 # Python
 
+## requirements.txt
+
+```bash
+arrow==0.15.5
+attrs==19.3.0
+confluent-kafka==1.3.0
+importlib-metadata==1.5.0
+jsonschema==3.2.0
+kafka==1.3.5
+kafka-python==2.0.1
+pyrsistent==0.16.0
+python-dateutil==2.8.1
+six==1.14.0
+times==0.7
+urllib3==1.25.8
+zipp==3.1.0
+```
 
 ## Producer velib-get-stations.py
 
