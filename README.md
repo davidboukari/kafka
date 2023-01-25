@@ -1,5 +1,10 @@
 # kafka
 
+* https://data-flair.training/blogs/kafka-architecture/
+<img width="1205" alt="image" src="https://user-images.githubusercontent.com/32338685/214583308-14ffa7ae-d364-433b-92bd-813e6a9c4f36.png">
+
+
+
 * https://blog.zenika.com/2021/04/07/lavenir-de-zookeeper-dans-une-architecture-kafka/
 <img width="664" alt="image" src="https://user-images.githubusercontent.com/32338685/138103525-602a751b-bd18-48fa-94d4-e271df5a1722.png">
 
