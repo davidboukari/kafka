@@ -1,5 +1,12 @@
 # kafka
 
+## See also RabbitMQ
+* https://www.erlang-solutions.com/blog/an-introduction-to-rabbitmq-what-is-rabbitmq/
+<img width="885" alt="image" src="https://user-images.githubusercontent.com/32338685/214584205-120daa43-7b0d-4cbc-82e5-ce861c3901fa.png">
+
+
+## Kafka
+
 * https://data-flair.training/blogs/kafka-architecture/
 <img width="1205" alt="image" src="https://user-images.githubusercontent.com/32338685/214583308-14ffa7ae-d364-433b-92bd-813e6a9c4f36.png">
 
